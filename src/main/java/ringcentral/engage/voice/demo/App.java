@@ -9,12 +9,7 @@ import okhttp3.ResponseBody;
 import java.io.IOException;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
-
     public static void main(String[] args) throws IOException, RestException, com.ringcentral.engagevoice.RestException {
-
         Dotenv dotenv = Dotenv.load();
 
         RestClient rc = new RestClient(
